@@ -44,8 +44,8 @@ REVERB-2MIX [1] is a dataset composed of a set of noisy reverberant speech mixtu
 2.  Run CreateREVERB2MIX.m on matlab interpretor (ver. 2008b or newer), for example, by
 
     \>> WSJ_dir = 'path_to_WSJCAM0_dataset_dir';  
-    >> REVERB_dir = 'path_to_REVERB_Challenge_dataset_dir';  
-    >> CreateREVERB2MIX(WSJ_dir, REVERB_dir);  
+    \>> REVERB_dir = 'path_to_REVERB_Challenge_dataset_dir';  
+    \>> CreateREVERB2MIX(WSJ_dir, REVERB_dir);  
 
     where WSJ_dir is a path to your WSJCAM0 dataset [3] directory, and REVERB_dir is a path to your REVERB Challenge dataset directory.
 
@@ -78,12 +78,12 @@ For evaluation, you typically have two enhanced signals for each mixture, and ne
 
 A sample matlab code, SelectTarget.m, for selecting enhanced signals to be evaluated is also included in this package. You can use the code as:
 
- >> wavscp_dir = './REVERB_2MIX/scps/';  
- >> enh1_dir = 'path_to_enh1_dir';  
- >> enh2_dir = 'path_to_enh2_dir';  
- >> REVERB_dir = 'path_to_REVERB_Challenge_dataset_dir';  
- >> out_dir = 'path_to_output_dir';  
- >> SelectTarget(wavscp_dir, enh1_dir, enh2_dir, REVERB_dir_name, output_dir);  
+ \>> wavscp_dir = './REVERB_2MIX/scps/';  
+ \>> enh1_dir = 'path_to_enh1_dir';  
+ \>> enh2_dir = 'path_to_enh2_dir';  
+ \>> REVERB_dir = 'path_to_REVERB_Challenge_dataset_dir';  
+ \>> out_dir = 'path_to_output_dir';  
+ \>> SelectTarget(wavscp_dir, enh1_dir, enh2_dir, REVERB_dir_name, output_dir);  
 
  where wavscp_dir is a path to the scp files, enh1_dir and enh2_dir are pathes to directories of the two enhanced signals, REVERB_dir is a path to your REVERB Challenge dataset directory, and out_dir is a path to a directory that stores selected enhanced signals. It is assumed that each signal is located under enh1_dir, enh2_dir, REVERB_dir, and out_dir according to the relative pathes specified in the scp files.
 
