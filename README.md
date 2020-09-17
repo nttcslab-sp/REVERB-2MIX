@@ -72,7 +72,7 @@ Each line in each scp file contains a pair of label and path to a wav file. As a
 
 The first item is the label and the second item is the relative path from './REVERB_2MIX/' directory to the wav file. Each wav file contains 8ch audio signals sampled at 16 kHz.
 
-### Access to corresponding data in REVERB Eval set
+### Access to corresponding original signals in REVERB Eval set
 
 For evaluation, you typically have two enhanced signals for each mixture, and need to select one that corresponds to the REVERB Eval set. For this selection, you can also use the above scp files to find an origianl signal (reference channel) in the REVERB Challenge Eval set that corresponds to a signal included in each mixture. This can be done by concatenating the path to your REVERB challenge dataset directory with each path in each scp file. Then, you can just select enhanced signals to be evaluated by picking up ones that are closer to the original signals.
 
