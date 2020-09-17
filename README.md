@@ -18,16 +18,16 @@ REVERB-2MIX [1] is a dataset composed of a set of noisy reverberant speech mixtu
 
 5.  We categorize the utterances in REVERB-2MIX based on the original categories of the data in the REVERB challenge dataset as 
     follows:
->        - RealData
->        	- room1, near
->        	- room1, far
->        - SimuData
->        	- room1, near
->        	- room1, far
->        	- room2, near
->        	- room2, far
->        	- room3, near
->        	- room3, far
+    - RealData
+        - room1, near
+        - room1, far
+    - SimuData
+        - room1, near
+        - room1, far
+        - room2, near
+        - room2, far
+        - room3, near
+        - room3, far
 
 6.  With REVERB-2MIX, evaluation of enhanced signals is typically performed based only on one of two utterances included in each speech mixture that corresponds to the REVERB Challenge Eval set. With this configuration, speech enhancement evaluation tools provided for the REVERB Challenge Eval set can be used as it is also for REVERB-2MIX. The evaluation flow could be as follows:
         1. Estimate two source signals included in each mixture
