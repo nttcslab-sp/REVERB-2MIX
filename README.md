@@ -10,13 +10,11 @@ REVERB-2MIX [1] is a dataset composed of a set of noisy reverberant speech mixtu
 
 1.  The REVERB-2MIX dataset was created using the REVERB Challenge dataset (<https://reverb2014.dereverberation.com/>) [2]. Each utterance in the REVERB Challenge dataset contains a single reverberant speech signal with moderate stationary diffuse noise. 
 
-2.  To generate noisy reverberant speech mixtures for REVERB-2MIX, two utterances extracted from the REVERB Challenge dataset were mixed, one from its development set (Dev set) and the other from its evaluation set (Eval set). Because signal levels were not modified at the mixing, power ratios of the signals in mixtures vary dependent on their original signal levels.
+2.  To generate noisy reverberant speech mixtures for REVERB-2MIX, two utterances extracted from the REVERB Challenge dataset were mixed, one from its development set (Dev set) and the other from its evaluation set (Eval set). Each pair of utterances in each mixture were selected so that they were recorded in the same room, by the same microphone array, and under the same condition (near or far, RealData or SimData). Because signal levels were not modified at the mixing, power ratios of the signals in mixtures vary dependent on their original signal levels.
 
-3.  Each pair of utterances in each mixture were selected so that they were recorded in the same room, by the same microphone array, and under the same condition (near or far, RealData or SimData).
+3.  REVERB-2MIX contains the same number of mixtures as in the REVERB Eval set, such that each utterance in the REVERB Eval set is included in one of the mixtures in REVERB-2MIX. The length of each mixture in REVERB-2MIX was set at the same as that of the corresponding utterance in the REVERB Eval set, and the utterance from the Dev set was trimmed or zero-padded at its end to be the same length as that of the Eval set.
 
-4.  REVERB-2MIX contains the same number of mixtures as in the REVERB Eval set, such that each utterance in the REVERB Eval set is included in one of the mixtures in REVERB-2MIX. The length of each mixture in REVERB-2MIX was set at the same as that of the corresponding utterance in the REVERB Eval set, and the utterance from the Dev set was trimmed or zero-padded at its end to be the same length as that of the Eval set.
-
-5.  We categorize the utterances in REVERB-2MIX based on the original categories of the data in the REVERB challenge dataset as 
+4.  We categorize the utterances in REVERB-2MIX based on the original categories of the data in the REVERB challenge dataset as 
     follows:
     - RealData
         - room1, near
@@ -29,13 +27,13 @@ REVERB-2MIX [1] is a dataset composed of a set of noisy reverberant speech mixtu
         - room3, near
         - room3, far
 
-6.  With REVERB-2MIX, evaluation of enhanced signals is typically performed based only on one of two utterances included in each speech mixture that corresponds to the REVERB Challenge Eval set. With this configuration, speech enhancement evaluation tools provided for the REVERB Challenge Eval set can be used as it is also for REVERB-2MIX. The evaluation flow could be as follows:
+5.  With REVERB-2MIX, evaluation of enhanced signals is typically performed based only on one of two utterances included in each speech mixture that corresponds to the REVERB Challenge Eval set. With this configuration, speech enhancement evaluation tools provided for the REVERB Challenge Eval set can be used as it is also for REVERB-2MIX. The evaluation flow could be as follows:
         1. Estimate two source signals included in each mixture
         2. Select a signal to be evaluated from the two estimated source signals based, for example, on correlation between the estimated signals and the original signal in the REVERB Eval set
         3. Evaluate the selected signal using the evaluation tools
     A sample matlab code to select an enhance signal that corresponds to the original signal in the REVERB Eval set is also included in this tool package. Please also check "How to access data in each category" in this README.
 
-7.  The evaluation tools include signal distortion metrics provided for the challenge, such as cepstral distortion and frequency-weighted segmental signal-to-noise ratio, and baseline automatic speech recognition system developed by Kaldi. Please check the REVERB Challenge web site for the detail.
+6.  The evaluation tools include signal distortion metrics provided for the challenge, such as cepstral distortion and frequency-weighted segmental signal-to-noise ratio, and baseline automatic speech recognition system developed by Kaldi. Please check the REVERB Challenge web site for the detail.
 
 ## How to install the REVERB-2MIX dataset
 
