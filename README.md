@@ -1,8 +1,3 @@
----
-title: "README"
-tags: ""
----
-
 # REVERB-2MIX
 
 A package of tools for creating and using REVERB-2MIX dataset
