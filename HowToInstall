@@ -1,0 +1,12 @@
+How to install the REVERB_2MIX dataset:
+
+1. Install the REVERB Challenge dataset according to the guideline at https://reverb2014.dereverberation.com/download.html. 
+2. run CreateREVERB2MIX on matlab interpretor by:
+
+>> WSJ_dir_name = 'path_to_WSJCAM0_dataset_dir';
+>> REVERB_dir_name = 'path_to_REVERB_Challenge_dataset_dir';
+>> CreateREVERB2MIX(WSJ_dir_name, REVERB_dir_name);
+
+where WSJ_dir_name is path to your WSJCAM0 dataset directory, and REVERB_dir_name is path to your REVERB Challenge dataset directory.
+
+Then, the REVERB_2MIX dataset is created under './REVERB_2MIX/' directory.
