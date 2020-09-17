@@ -25,10 +25,9 @@ REVERB-2MIX [1] is a dataset composed of a set of noisy reverberant speech mixtu
         - room3, near
         - room3, far
 
+4.  With REVERB-2MIX, evaluation of enhanced signals is supposed to be performed based only on one of two utterances included in each speech mixture that corresponds to the REVERB Challenge Eval set. With this evaluation scheme, we can use speech enhancement evaluation tools provided for the REVERB Challenge Eval set also for REVERB-2MIX. For eabling this scheme, the number of mixtures in REVERB-2MIX was set at the same as that of the utterances in the REVERB Eval set, and all the utterance in the REVERB Eval set were included in either one of the mixtures in REVERB-2MIX. Furthermore, the length of each mixture in REVERB-2MIX was set at the same as that of the corresponding utterance in the REVERB Eval set, and the utterance from the Dev set was trimmed or zero-padded at its end to be the same length as that of the Eval set.
 
-4.  REVERB-2MIX was created such that the number of mixtures in it is the same as that of the utterances in the REVERB Eval set, and that each utterance in the REVERB Eval set is included in one of the mixtures in REVERB-2MIX. Furthermore, the length of each mixture in REVERB-2MIX was set at the same as that of the corresponding utterance in the REVERB Eval set, and the utterance from the Dev set was trimmed or zero-padded at its end to be the same length as that of the Eval set.
-
-5.  With REVERB-2MIX, evaluation of enhanced signals is typically performed based only on one of two utterances included in each speech mixture that corresponds to the REVERB Challenge Eval set. With this configuration, speech enhancement evaluation tools provided for the REVERB Challenge Eval set can be used as it is also for REVERB-2MIX. The evaluation flow could be as follows:  
+5.  The evaluation flow could be as follows:  
     1. Estimate two source signals included in each mixture
     2. Select a signal to be evaluated from the two estimated source signals based, for example, on correlation between the estimated signals and the original signal in the REVERB Eval set
     3. Evaluate the selected signal using the evaluation tools  
