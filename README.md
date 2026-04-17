@@ -8,7 +8,7 @@ REVERB-2MIX [1] is a dataset composed of a set of noisy reverberant speech mixtu
 
 ## Specification of the REVERB-2MIX dataset
 
-1.  The REVERB-2MIX dataset was created using the REVERB Challenge dataset (<https://reverb2014.dereverberation.com/>) [2]. Each utterance in the REVERB Challenge dataset contains a single reverberant speech signal with moderate stationary diffuse noise. 
+1.  The REVERB-2MIX dataset was created using the REVERB Challenge dataset (<https://reverb2014.audiolabs-erlangen.de/>) [2]. Each utterance in the REVERB Challenge dataset contains a single reverberant speech signal with moderate stationary diffuse noise. 
 
 2.  To generate noisy reverberant speech mixtures for REVERB-2MIX, two utterances extracted from the REVERB Challenge dataset were mixed, one from its development set (Dev set) and the other from its evaluation set (Eval set). Because signal levels were not modified at the mixing, power ratios of the signals in mixtures vary dependent on their original signal levels.
 
