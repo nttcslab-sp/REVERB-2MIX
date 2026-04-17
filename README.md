@@ -38,7 +38,7 @@ REVERB-2MIX [1] is a dataset composed of a set of noisy reverberant speech mixtu
 
 ## How to install the REVERB-2MIX dataset
 
-1.  First, install the REVERB Challenge dataset according to the guideline at <https://reverb2014.dereverberation.com/download.html>. 
+1.  First, install the REVERB Challenge dataset according to the guideline at <https://reverb2014.audiolabs-erlangen.de/download.html>. 
 
 2.  Run CreateREVERB2MIX.m on matlab interpretor (ver. 2008b or newer), for example, by
 
